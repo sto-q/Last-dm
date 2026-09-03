@@ -1,0 +1,9 @@
+<!--<!ELEMENT student (name,age,sex) ANY>-->
+<!ELEMENT students (student*)>
+<!ELEMENT student EMPTY>
+<!--<!ELEMENT name (#PCDATA)>-->
+<!--<!ELEMENT age (#PCDATA)>-->
+<!--<!ELEMENT sex (#PCDATA)>-->
+<!ATTLIST student name CDATA>
+<!ATTLIST student sex(1|0) #IMPLIED>
+<!ATTLIST student age CDATA >
